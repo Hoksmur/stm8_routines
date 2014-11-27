@@ -2,7 +2,7 @@ stm8_routines
 =============
 
 
-[ for Cosmic compiler ]
+[ for Cosmic and SDCC compiler ]
 
 delay.h - software delay functions
 
