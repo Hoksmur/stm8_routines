@@ -18,7 +18,7 @@
  * when tick = 1, because 0 equels 65535
  */
 
-static inline void _delay_cycl( const unsigned short __ticks )
+static inline void _delay_cycl( unsigned short __ticks )
 {
 #if defined(__CSMC__)
 /* COSMIC */
