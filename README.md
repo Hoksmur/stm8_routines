@@ -13,25 +13,25 @@ owire.h, owire.c - full software 1-wire functions. It has macro for use with int
 
 SEM - simple encoder (or embedded) menu
 =============
- Use only 3 functions. Flexible and small footprint
+ Use only 3 functions. Flexible and small footprint.
 
- Menu item has a structure:
- +------------+---------+------+-----------+
- | ->fwLink   | -> text | type | this item |
- +------------+---------+------+-----------+
+ Menu item has a structure:  
+ +------------+---------+------+-----------+  
+ | ->fwLink   | -> text | type | this item |  
+ +------------+---------+------+-----------+  
  
- Example menu structure:
+ Example menu structure:  
  
-  'Item 1>'
-    'back'
-    'item 4'
-  'item 2'
-  'item 3'
+  'Item 1>'  
+    'back'  
+    'item 4'  
+  'item 2'  
+  'item 3'  
  
  Event route:
- mode: selected or unselected item
- -each has: event( em_up, em_down or em_press)
- -each of menuitem has code block for every value type that this one returns. Example has for submenu, signed char and unsigned char.
+ mode: selected or unselected item  
+ -each has: event( em_up, em_down or em_press)  
+ -each of menuitem has code block for every value type that this one returns. Example has for submenu, signed char and unsigned char.  
 
 
 LCD display Nokia 5110 3110 on PCD8544 84x48 
