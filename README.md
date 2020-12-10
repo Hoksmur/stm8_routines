@@ -17,6 +17,9 @@ owire.h, owire.c - full software 1-wire functions. It has macro for use with int
 + two function, two files *els.h*, *els.c*
 + only sizeof(void\*) + your int bytes in RAM per task (for 'char': 2+1);
 
+Write task's function run-to-comlete, it is state-mashine. Task can call each other, from ISR, ...
+Tasks have some kind unchanged priority, first in list is highest. See end of *els.c* for example.
+
 
 SEM - simple encoder (or embedded) menu
 =============
