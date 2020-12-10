@@ -10,6 +10,13 @@ atomic.h - atomic operations. Based on AVR-LibC idea. Cosmic hasn't opportunity 
 
 owire.h, owire.c - full software 1-wire functions. It has macro for use with interupts together.
 
+# Extremely light sheduler
+=============
++ ANSI C
++ less 100 strings
++ two function, two files *els.h*, *els.c*
++ only sizeof(void\*) + your int bytes in RAM per task (for 'char': 2+1);
+
 
 SEM - simple encoder (or embedded) menu
 =============
